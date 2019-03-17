@@ -1,0 +1,2 @@
+//# sourceMappingURL=jquery.secondsCountdown.js.map
+(function(b){b.fn.secondsCountdown=function(d,e){this.each(function(g,f){var a=b(f).show(),c=d;a.find(".seconds").html(c);b.data(a[0],"hCount")&&clearInterval(b.data(a[0],"hCount"));b.data(a[0],"hCount",setInterval(function(){c--;1>c?(e(),a.hide(),clearInterval(a.hCount),a.hCount=null):a.find(".seconds").html(c)},1E3))});return this}})(jQuery);
